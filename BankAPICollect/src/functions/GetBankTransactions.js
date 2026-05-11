@@ -1,4 +1,10 @@
 const axios = require('axios');
+
+// Polyfill for browser globals not available in Node.js (required for @actual-app/api >= 26.3.x)
+if (typeof navigator === 'undefined') {
+  global.navigator = { platform: '', userAgent: '' };
+}
+
 const api = require('@actual-app/api');
 
 //require('dotenv').config();
