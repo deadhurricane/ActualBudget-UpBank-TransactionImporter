@@ -12,6 +12,7 @@
     "axios": "^1.7.8",
     "better-sqlite3": "^11.10.0",
     "dotenv": "^16.5.0",
+    "googleapis": "^144.0.0",
     "node-cron": "3.0.3"
   },
   "main": "src/{index.js,functions/*.js}"
